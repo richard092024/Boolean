@@ -1,0 +1,109 @@
+/* Generelle stiler */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Body stiler */
+body {
+  background-color: #e0f7fa; /* Lys teal bakgrunn */
+  display: block;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    #4db6ac,
+    #009688
+  ); /* Gradient-effekt */
+}
+
+/* Hovedoverskrift */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+/* Skjema-beholder */
+form {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+/* Style for å plassere etiketten og inputfelt vertikalt */
+form label,
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Label stiler */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Input, select og button stiler */
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Fokus-effekt på input og select */
+input:focus,
+select:focus {
+  border-color: #009688;
+  outline: none;
+}
+
+/* Knapp-stiler */
+button {
+  background-color: #009688;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #00796b; /* Mørkere teal ved hover */
+}
+
+/* Meldings-stiler */
+#message {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Responsive justeringer */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="username">Brukernavn:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Skriv inn brukernavn"
+      />
+
+      <label for="age">Alder:</label>
+      <input type="number" id="age" name="age" placeholder="Skriv inn alder" />
+
+      <label for="blocked">Er brukeren blokkert?</label>
+      <select id="blocked">
+        <option value="false">Nei</option>
+        <option value="true">Ja</option>
+      </select>
+
+      <button type="submit">Logg inn</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
